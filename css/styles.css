@@ -1,0 +1,165 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+ font-family: 'Rubik', Helvetica, sans-serif;
+ line-height: 1.95em;
+ font-weight: 300;
+ color: #828282;
+ margin: 0 auto;
+}
+
+p {
+  font-size: 1.2em;
+  padding-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #545454;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.4em;
+  color: #545454;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+h4 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 2em;
+  margin: 0;
+}
+
+.main-nav {
+  margin-top: 15px;
+}
+
+
+.name a,
+.main-nav a {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.main-nav a {
+  text-transform: uppercase;
+  background-color: white;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 1.5em
+}
+
+.main-nav a:hover {
+  color: #999;
+}
+
+
+
+
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  background-color: #efefef;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h2 {
+  margin: 50px auto;
+}
+
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.contact {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+.main-footer {
+  padding: 20px;
+  border-top: 1px solid darkgrey;
+}
+
+.contact,
+.main-footer {
+  background-color: #efefef;
+}
+
+.back-to-top {
+  display: inline-block;
+  float: right;
+  text-transform: uppercase;
+}
+
+.student-name {
+  display: inline-block;
+}
+
+
+
+
+/* ---- Page Elements ---- */
+
+
+
+
+
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+
+
+
+
+
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
