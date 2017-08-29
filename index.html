@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
   <title>Responsive Layout Project</title>
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-  <body> <!-- The content of the document...... -->
+<body> <!-- The content of the document...... -->
 
+  <div class="wrapper">
     <header class="main-header">
       <div class="container clearfix">
         <h1 class="name"><a href="#">Student Name</a></h1>
@@ -17,15 +18,17 @@
           <li><a href="#portfolio-section">portfolio</a></li>
           <li><a href="#contact-section">contact</a></li>
         </ul>
-
-        <img src="images/responsive-layout-profile.png" alt="Student profile picture">
-        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning
-          front-end web development at Treehouse and am excited to put all my skills to use!</p>
-      </div>
+      </div>  <!-- container clearfix di-->
     </header>
 
+    <div class="banner clearfix">
+      <img class="profile-pic" src="images/responsive-layout-profile.png" alt="Student profile picture">
+      <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning
+        front-end web development at Treehouse and am excited to put all my skills to use!</p>
+    </div> <!-- banner div -->
 
-    <div id="portfolio-section" class="container clearfix">
+
+    <div id="portfolio-section" class="main-content container clearfix">
 
       <h2>Portfolio</h2>
 
@@ -33,54 +36,63 @@
         <img src="images/portfolio-1.png" alt="portfolio 1 graphic">
         <h3>Marketing Page</h3>
         <p>This project shows the front page of a marketing
-            website meant for a specific business I'm interested in.</p>
+            site meant for a specific business I'm interested in.</p>
       </div> <!-- marketing col -->
 
       <div class="search col">
         <img src="images/portfolio-2.png" alt="portfolio 2 graphic">
         <h3>Search Page</h3>
-        <p>xxxxx.</p>
+        <p>This project searches through a specific database to find information
+          that the user is trying to look up.</p>
       </div> <!-- search col -->
 
       <div class="travel col">
         <img src="images/portfolio-3.png" alt="portfolio 3 graphic">
         <h3>Travel App</h3>
-        <p>xxxxx.</p>
+        <p>This project compates travel times based on different transportation
+          methods and tells you the best one.</p>
       </div> <!-- travel col -->
 
       <div class="map col">
         <img src="images/portfolio-4.png" alt="portfolio 4 graphic">
         <h3>Map of Favorite Spots</h3>
-        <p>xxxxx.</p>
+        <p>This project uses mapping apis to plot poimts for my favorite
+          spots in the city for a do-it-yourself walking tour.</p>
       </div> <!-- map col -->
 
       <div class="gallery col">
         <img src="images/portfolio-5.png" alt="portfolio 5 graphic">
         <h3>Photo Gallery</h3>
-        <p>xxxxx.</p>
+        <p>This project shows pictures from a recent trip to the viewer
+          and allows them to easily navigate through photos.</p>
       </div> <!-- gallery col -->
 
-      <divclass="calculator col">
+      <div class="calculator col">
         <img src="images/portfolio-6.png" alt="portfolio 6 graphic">
         <h3>Calculator</h3>
-        <p>xxxxx.</p>
+        <p>Someone can enter in the numbers they want, and press
+          the big blue button and get the result.</p>
       </div> <!-- calculator col -->
-
-
-      <div class="contact" id="contact-section">
-        <h2>Contact</h2>
-        <p>If you're interested in chatting or want more information
-          about what I've been working on, I'd love to hear from you!</p>
-          <p>Phone <strong>+1 (111) 555-1234</strong></p>
-          <p>Email <strong>email@yoursite.com</strong></p>
-      </div>  <!-- contact div -->
-
     </div> <!-- container clearfix div -->
+
+    <div id="contact-section" class="contact" >
+      <h2>Contact</h2>
+      <p>If you're interested in chatting or want more information
+        about what I've been working on, I'd love to hear from you!</p>
+        <p class="phone">Phone &nbsp; <span>+1 (111) 555-1234</span></p>
+        <p>Email &nbsp; <span>email@yoursite.com</span></p>
+    </div>  <!-- contact div -->
+
 
     <footer class="main-footer clearfix">
       <h4 class="student-name">Student name</h4>
       <h4 class="back-to-top"><a href="#">Back to top</a></h4>
+        <ul class="footer-nav">
+          <li><a href="#">home</a></li>
+          <li><a href="#portfolio-section">portfolio</a></li>
+          <li><a href="#contact-section">contact</a></li>
+        </ul>
     </footer>
-
-  </body>
+  </div> <!-- end wrapper -->
+</body>
 </html>
